@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: antiquewhite;
+}
+.main
+{
+    background-color: aqua;
+    height: 400px;
+}
+.light
+{
+    background-color: aliceblue;
+    height: 75px;
+    width: 75px;
+    border: solid black;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.red:hover
+{
+    background-color: red;
+}
+.green:hover
+{
+    background-color: green;
+}
+.orange:hover
+{
+    background-color: orange;
+}
+.stand
+{
+    background-color: black;
+    height: 50vh;
+    width: 25px;
+    margin-left: 45px;
+}

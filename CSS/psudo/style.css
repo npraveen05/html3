@@ -1,0 +1,25 @@
+*
+{
+box-sizing: border-box;
+}
+a:link
+{
+    background-color: brown;
+}
+a:active
+{
+    background-color: blue;
+    color: antiquewhite;
+}
+a:visited
+{
+    color:yellow;
+}
+:input:hover
+{
+    background-color: bisque;
+}
+.input:focus
+{
+    background-color: red;
+}

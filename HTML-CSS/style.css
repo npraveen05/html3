@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+*{
+    --primary:dodgerblue;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: "Sofia", cursive;
+    font-weight: 400;
+   font-style:oblique; 
+   background-color:azure;  
+}
+/* header starts*/
+header
+{
+    background-color:antiquewhite;
+    color:blue;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+header .logo{
+    font-size: 40px;
+    font-family:serif;
+    display: flex;
+}
+header .logo span:nth-child(1)
+{
+    color: var(--primary);
+}
+header .menu ul
+{
+   display: flex;
+   gap: 30px;
+   font-size: 26px;
+}
+header ul li{
+    list-style-type:none;
+}
+header .menu ul li a{
+    text-decoration: none;
+    color:coral;
+}
+header .menu ul li a:hover{
+    color: var(--primary);   
+}
+header .menu ul li:hover{
+    transform: scale(1.1);
+}
+
+/* header ends*/
+/*banner starts*/
+#banner{
+    display: flex;
+    padding: 20px 40px;
+    height: 80vh;
+   
+}
+#banner .left{
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.left span{
+    color: var(--primary);
+}
+.left h2{
+    font-size: 60px;
+    font-family:monospace;
+    margin-bottom: 0px;
+}
+.left h4{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.left p{
+   text-align: jus; 
+   font-size: 16px;
+   font-family:'serif';
+}
+.buttons
+{
+    display: flex;
+    gap: 20px;
+}
+button{
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid var(--primary);
+    transition: all 2s ease;
+}
+.buttons button:nth-child(1){
+ background-color: var(--primary); 
+   color: white;
+}
+button:hover{
+    transform: scaleX(1.1);
+    background-color: var(--primary);
+}
+.right img
+{
+   height: 50vh; 
+   border-radius: 50%;
+}
+/*about starts*/
+#about p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+#about{
+    text-align: center;
+}
+#about button{
+    background-color:aquamarine
+}
+/*about ends*/
+/*project starts*/
+#projects{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 20px;
+}
+#projects #project{
+    box-shadow: 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+#projects #project img{
+    width: 200px;
+}
+/*project end*/
+.heading
+{
+    color: var(--primary);
+    font-size: 30px;
+    text-align: center;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#contact input,textarea{
+    width:100%;
+    border-radius: 10px;
+    height: 2rem;
+}
+#project:hover{
+    box-shadow: 5px 5px var(--primary);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer span{
+    color: var(--primary);
+}
+/*banner ends*/
+/*mobile design*/
+/* normal small -- max 480/570px,
+tablets---768-790px
+pc---1024px
+laptop--1200px --1400px
+>1400px--- screens*/
+@media (max-width:798px) {
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }  
+}

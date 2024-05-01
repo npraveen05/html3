@@ -1,0 +1,49 @@
+.main
+{
+    display: grid;
+   /* grid-template-columns: 100px 3rem 20%;*/
+   grid-template-columns:repeat(4,auto);
+   width: 300px;
+   height: 300px;
+  /* row-gap: 20px;
+   column-gap: 10px;
+   gap: 20px;
+   justify-content: start;
+   align-items: start;
+   align-content: start;*/
+   grid-template-areas: "a a a"
+                        "b c c"
+                        "b c c"
+                        "b d d"
+                       
+}                    
+.box
+{
+    background-color: red;
+  /*  height: 50px;
+    width: 50px;*/
+    border: 1px solid white;
+    color: aqua;
+
+}
+.first
+{
+    grid-area: a;
+}
+.second
+{
+    grid-area: b;
+}
+.third{
+    grid-area: c;
+}
+.fourth{
+    grid-area: d;
+}
+
+/*grid-row-start: 1;
+    grid-row-end: 3;
+    grid-row: 1/3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-column: 1/3;*/
